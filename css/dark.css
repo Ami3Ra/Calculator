@@ -1,0 +1,57 @@
+
+*{
+    font-family: "Open Sans", sans-serif;
+    font-weight: bold;
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+body{
+    background-color: black;
+}
+h1 {
+    margin-bottom: 1.5%;
+    color: #fff;
+}
+.first-row,.second-row,.third-row,.forth-row,.fifth-row{
+    margin-bottom: 3px;
+}
+input{
+    padding: 25px;
+    color: rgb(255, 255, 255);
+    background-color: rgb(47, 51, 50);
+    font-size: 1em;
+    cursor: pointer;
+    border: none;
+    outline: none;
+    width: 70px;
+    border-radius: 4px;
+}
+
+#calc{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    min-height: 100vh;
+}
+#result{
+    width: 220px;
+}
+#delete{
+    background-color:rgb(193, 95, 190) ;
+}
+button{
+    border: none;
+    background-color: rgb(39, 36, 36);
+    padding: 10px;
+    color: white;
+    margin: 2px;
+    cursor: pointer;
+    outline: none;
+    border-radius: 4px;
+}
+.buttons{
+    margin-left: -4.5%;
+    margin-top: 0.7%;
+}

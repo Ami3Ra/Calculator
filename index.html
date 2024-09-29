@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en" class="bg-dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/dark.css" id="theme">
+</head>
+<body>
+    <section id="calc">
+        <h1>Calculator</h1>
+        <div class="first-row">
+            <input type="text" name="result" id="result" placeholder="Result" readonly>
+            <input type="button" name="delete" id="delete" value="C" onclick="clearCalc()">
+        </div>
+        <div class="second-row">
+            <input type="button" name="one" id="one" value="1" onclick="liveScreen(1)" >
+            <input type="button" name="two" id="two" value="2" onclick="liveScreen(2)">
+            <input type="button" name="three" id="three" value="3" onclick="liveScreen(3)">
+            <input type="button" name="sum" id="sum" value="+" onclick="liveScreen('+')">
+        </div>
+        <div class="third-row">
+            <input type="button" name="four" id="four" value="4" onclick="liveScreen(4)">
+            <input type="button" name="five" id="five" value="5" onclick="liveScreen(5)">
+            <input type="button" name="six" id="six" value="6" onclick="liveScreen(6)">
+            <input type="button" name="sub" id="sub" value="-" onclick="liveScreen('-')">
+        </div>
+        <div class="forth-row">
+            <input type="button" name="seven" id="seven" value="7" onclick="liveScreen(7)">
+            <input type="button" name="eight" id="eight" value="8" onclick="liveScreen(8)">
+            <input type="button" name="nine" id="nine" value="9" onclick="liveScreen(9)">
+            <input type="button" name="mult" id="mult" value="*" onclick="liveScreen('*')">
+        </div>
+        <div class="fifth-row">
+            <input type="button" name="div" id="div" value="/" onclick="liveScreen('/')">
+            <input type="button" name="zero" id="zero" value="0" onclick="liveScreen(0)">
+            <input type="button" name="dot" id="dot" value="." onclick="liveScreen('.')">
+            <input type="button" name="equle" id="equle" value="=" onclick="result.value = eval(result.value)">
+        </div>
+        <div class="buttons">
+            <button class="btn1">
+                <i class="fa-brands fa-github"></i>
+                <a>GitHub</a>
+            </button>
+            <button class="btn2" id="dark" onclick="switchTheme()">
+                light Mode
+                <i id="mode" class="fa-solid fa-moon fa-rotate-270 "  style="color: #FFD43B;"></i>
+            </button>
+        </div>
+    </section>
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
